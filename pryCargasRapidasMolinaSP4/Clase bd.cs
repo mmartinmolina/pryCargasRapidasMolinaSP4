@@ -19,7 +19,7 @@ namespace pryCargasRapidasMolinaSP4
         
             //cadena de conexion
             //sql - string cadenaConexion = "Server=localhost;Database=Ventas2;Trusted_Connection=True;";
-            string cadenaConexion = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=..\\..\\..\\BaseDeDatos\\control_transporte.accdb";
+            string cadenaConexion = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=..\\..\\BaseDeDatos\\control_transporte.accdb";
             //conector
             //SqlConnection coneccionBaseDatos;
             OleDbConnection coneccionBaseDatos;

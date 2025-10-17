@@ -25,7 +25,12 @@ namespace pryCargasRapidasMolinaSP4
         private void Form1_Load(object sender, EventArgs e)
         {
             Clase_bd clase_Bd = new Clase_bd();
-            clase_Bd.ConectarBD(verificacionEstado);
+            clase_Bd.ConectarBD(lblverificacionEstado);
+        }
+
+        private void statusStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }

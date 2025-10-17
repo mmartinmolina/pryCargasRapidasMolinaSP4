@@ -32,7 +32,7 @@
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.verificacionEstado = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lblverificacionEstado = new System.Windows.Forms.ToolStripStatusLabel();
             this.btnKMporCamion = new System.Windows.Forms.Button();
             this.btnGastosCamion = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -47,19 +47,20 @@
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.verificacionEstado});
+            this.lblverificacionEstado});
             this.statusStrip1.Location = new System.Drawing.Point(0, 424);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(659, 22);
             this.statusStrip1.TabIndex = 0;
             this.statusStrip1.Text = "statusStrip1";
+            this.statusStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.statusStrip1_ItemClicked);
             // 
-            // verificacionEstado
+            // lblverificacionEstado
             // 
-            this.verificacionEstado.Name = "verificacionEstado";
-            this.verificacionEstado.Size = new System.Drawing.Size(106, 17);
-            this.verificacionEstado.Text = "lblEstadoConexion";
-            this.verificacionEstado.Click += new System.EventHandler(this.toolStripStatusLabel1_Click);
+            this.lblverificacionEstado.Name = "lblverificacionEstado";
+            this.lblverificacionEstado.Size = new System.Drawing.Size(106, 17);
+            this.lblverificacionEstado.Text = "lblEstadoConexion";
+            this.lblverificacionEstado.Click += new System.EventHandler(this.toolStripStatusLabel1_Click);
             // 
             // btnKMporCamion
             // 
@@ -158,7 +159,7 @@
         #endregion
 
         private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.ToolStripStatusLabel verificacionEstado;
+        private System.Windows.Forms.ToolStripStatusLabel lblverificacionEstado;
         private System.Windows.Forms.Button btnKMporCamion;
         private System.Windows.Forms.Button btnGastosCamion;
         private System.Windows.Forms.Button button3;

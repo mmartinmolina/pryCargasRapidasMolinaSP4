@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace pryCargasRapidasMolinaSP4
 {
-    public partial class Form1 : Form
+    public partial class EstadisticaConsumoLogistico : Form
     {
-        public Form1()
+        public EstadisticaConsumoLogistico()
         {
             InitializeComponent();
         }
@@ -31,6 +31,20 @@ namespace pryCargasRapidasMolinaSP4
         private void statusStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
+        }
+
+        private void btnKMporCamion_Click(object sender, EventArgs e)
+        {
+            chtCamiones.Series.Clear();
+            Clase_bd clase_Bd = new Clase_bd();
+            clase_Bd.cargarChart(chtCamiones);
+        }
+
+        private void btnGastosCamion_Click(object sender, EventArgs e)
+        {
+            chtCamiones.Series.Clear();
+            Clase_bd clase_Bd = new Clase_bd();
+            clase_Bd.cargarChartGastos(chtCamiones);
         }
     }
 }

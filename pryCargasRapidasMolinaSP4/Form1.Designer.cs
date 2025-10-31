@@ -109,7 +109,6 @@
             this.chtCamiones.Legends.Add(legend1);
             this.chtCamiones.Location = new System.Drawing.Point(186, 45);
             this.chtCamiones.Name = "chtCamiones";
-            this.chtCamiones.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Series1";

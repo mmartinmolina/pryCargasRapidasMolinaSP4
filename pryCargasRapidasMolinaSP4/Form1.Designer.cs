@@ -36,7 +36,7 @@
             this.lblverificacionEstado = new System.Windows.Forms.ToolStripStatusLabel();
             this.btnKMporCamion = new System.Windows.Forms.Button();
             this.btnGastosCamion = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnKilog = new System.Windows.Forms.Button();
             this.btnViaticosCamion = new System.Windows.Forms.Button();
             this.chtCamiones = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.statusStrip1.SuspendLayout();
@@ -81,14 +81,15 @@
             this.btnGastosCamion.UseVisualStyleBackColor = true;
             this.btnGastosCamion.Click += new System.EventHandler(this.btnGastosCamion_Click);
             // 
-            // button3
+            // btnKilog
             // 
-            this.button3.Location = new System.Drawing.Point(29, 193);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(113, 60);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Kilometros por camión";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnKilog.Location = new System.Drawing.Point(29, 193);
+            this.btnKilog.Name = "btnKilog";
+            this.btnKilog.Size = new System.Drawing.Size(113, 60);
+            this.btnKilog.TabIndex = 3;
+            this.btnKilog.Text = "Kilogramos por camión";
+            this.btnKilog.UseVisualStyleBackColor = true;
+            this.btnKilog.Click += new System.EventHandler(this.btnKilog_Click);
             // 
             // btnViaticosCamion
             // 
@@ -112,7 +113,7 @@
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chtCamiones.Series.Add(series1);
-            this.chtCamiones.Size = new System.Drawing.Size(461, 309);
+            this.chtCamiones.Size = new System.Drawing.Size(461, 310);
             this.chtCamiones.TabIndex = 5;
             this.chtCamiones.Text = "chtCaminones";
             // 
@@ -124,7 +125,7 @@
             this.ClientSize = new System.Drawing.Size(659, 446);
             this.Controls.Add(this.chtCamiones);
             this.Controls.Add(this.btnViaticosCamion);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnKilog);
             this.Controls.Add(this.btnGastosCamion);
             this.Controls.Add(this.btnKMporCamion);
             this.Controls.Add(this.statusStrip1);
@@ -147,7 +148,7 @@
         private System.Windows.Forms.ToolStripStatusLabel lblverificacionEstado;
         private System.Windows.Forms.Button btnKMporCamion;
         private System.Windows.Forms.Button btnGastosCamion;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnKilog;
         private System.Windows.Forms.Button btnViaticosCamion;
         private System.Windows.Forms.DataVisualization.Charting.Chart chtCamiones;
     }

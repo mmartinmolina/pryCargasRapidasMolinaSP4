@@ -46,5 +46,12 @@ namespace pryCargasRapidasMolinaSP4
             Clase_bd clase_Bd = new Clase_bd();
             clase_Bd.cargarChartGastos(chtCamiones);
         }
+
+        private void btnKilog_Click(object sender, EventArgs e)
+        {
+            chtCamiones.Series.Clear();
+            Clase_bd clase_Bd = new Clase_bd();
+            clase_Bd.cargarChartKilog(chtCamiones);
+        }
     }
 }

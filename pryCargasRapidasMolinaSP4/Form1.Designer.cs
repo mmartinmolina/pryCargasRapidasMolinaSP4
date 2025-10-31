@@ -92,7 +92,7 @@
             // 
             // btnViaticosCamion
             // 
-            this.btnViaticosCamion.Location = new System.Drawing.Point(29, 259);
+            this.btnViaticosCamion.Location = new System.Drawing.Point(29, 274);
             this.btnViaticosCamion.Name = "btnViaticosCamion";
             this.btnViaticosCamion.Size = new System.Drawing.Size(113, 60);
             this.btnViaticosCamion.TabIndex = 4;

@@ -1,14 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+//para conexion de ACcess
+using System.Data.OleDb;
+using System.Data.Sql;
+using System.Data.SqlClient;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.Sql;
-using System.Data.SqlClient;
-
-//para conexion de ACcess
-using System.Data.OleDb;
-
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 
@@ -39,20 +38,16 @@ namespace pryCargasRapidasMolinaSP4
                 //coneccionBaseDatos = new SqlConnection(cadenaConexion);
                 coneccionBaseDatos = new OleDbConnection(cadenaConexion);
 
-                nombreBaseDeDatos = coneccionBaseDatos.Database;
 
+                nombreBaseDeDatos = Path.GetFileName(coneccionBaseDatos.DataSource);
                 coneccionBaseDatos.Open();
 
-                lblMensaje.Text = "Conexión Acces éxitosa";
-                lblMensaje.BackColor = System.Drawing.Color.LightGreen;
-
+                MessageBox.Show("Conectado a " + nombreBaseDeDatos);
             }
             catch (Exception error)
             {
-                lblMensaje.Text = error.Message;
-                lblMensaje.BackColor = System.Drawing.Color.LightCyan;
+                MessageBox.Show("Tiene un errorcito - " + error.Message);
             }
-
 
         }
 
